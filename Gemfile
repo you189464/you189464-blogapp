@@ -1,5 +1,7 @@
 source "https://rubygems.org"
 
+# デイトラDay8の指示にあったが、記載が見当たらないので追記。
+gem "sassc-rails"
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.2.2", ">= 7.2.2.1"
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
