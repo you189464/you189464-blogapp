@@ -1,5 +1,7 @@
 source "https://rubygems.org"
 
+# デイトラDay9の指示。
+gem "faker"
 # デイトラDay8の指示にあったが、記載が見当たらないので追記。
 gem "sassc-rails"
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
