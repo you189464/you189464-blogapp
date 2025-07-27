@@ -1,5 +1,7 @@
 source "https://rubygems.org"
 
+# デイトラDay14の指示。
+gem 'importmap-rails'
 # デイトラDay9の指示。
 gem "faker"
 # デイトラDay8の指示にあったが、記載が見当たらないので追記。
@@ -13,7 +15,8 @@ gem "sqlite3", ">= 1.4"
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", ">= 5.0"
 # Bundle and transpile JavaScript [https://github.com/rails/jsbundling-rails]
-gem "jsbundling-rails"
+# ↓「importmap-rails」と競合するのでコメントアウトで無効化
+# gem "jsbundling-rails"
 # Hotwire's SPA-like page accelerator [https://turbo.hotwired.dev]
 gem "turbo-rails"
 # Hotwire's modest JavaScript framework [https://stimulus.hotwired.dev]
