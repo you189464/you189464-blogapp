@@ -1,8 +1,15 @@
 source "https://rubygems.org"
 
-# デイトラDay14の指示。
-gem 'importmap-rails'
-# デイトラDay9の指示。
+# デイトラDay16
+gem "hamlit"
+gem "annotate"
+gem "better_errors"
+gem "binding_of_caller"
+# 上記が動かないため試験的にインストール。
+gem "haml-rails"
+# デイトラDay14
+gem "importmap-rails"
+# デイトラDay9
 gem "faker"
 # デイトラDay8の指示にあったが、記載が見当たらないので追記。
 gem "sassc-rails"
@@ -42,8 +49,14 @@ gem "bootsnap", require: false
 # gem "image_processing", "~> 1.2"
 
 group :development, :test do
+  # デイトラDay16の指示。
+  # gem "pry-byebug"
+
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri windows ], require: "debug/prelude"
+  gem "pry"
+  gem "pry-rails"
+  gem "rubocop-rails"
 
   # Static analysis for security vulnerabilities [https://brakemanscanner.org/]
   gem "brakeman", require: false
@@ -55,6 +68,7 @@ end
 group :development do
   # Use console on exceptions pages [https://github.com/rails/web-console]
   gem "web-console"
+  gem "erb2haml"
 end
 
 group :test do

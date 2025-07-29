@@ -1,5 +1,5 @@
 class ArticlesController < ApplicationController
-  before_action :set_article , only: [:show, :edit, :update]
+  before_action :set_article, only: [ :show, :edit, :update ]
 
   def index
     @articles = Article.all
@@ -15,9 +15,9 @@ class ArticlesController < ApplicationController
   def create
     @article = Article.new(article_params)
     if @article.save
-      redirect_to article_path(@article), notice: '記事が保存されました。'
+      redirect_to article_path(@article), notice: "記事が保存されました。"
     else
-      flash.now[:error] = '記事の保存に失敗しました。'
+      flash.now[:error] = "記事の保存に失敗しました。"
       render :new
     end
   end
@@ -27,9 +27,9 @@ class ArticlesController < ApplicationController
 
   def update
     if @article.update(article_params)
-      redirect_to article_path(@article), notice: '更新できました'
+      redirect_to article_path(@article), notice: "更新できました"
     else
-      flash.now[:error] = '更新できませんでした'
+      flash.now[:error] = "更新できませんでした"
       render :edit
     end
   end
