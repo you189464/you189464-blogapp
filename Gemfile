@@ -1,5 +1,7 @@
 source "https://rubygems.org"
 
+# デイトラDay19
+gem "devise"
 # デイトラDay16
 gem "hamlit"
 gem "annotate"
